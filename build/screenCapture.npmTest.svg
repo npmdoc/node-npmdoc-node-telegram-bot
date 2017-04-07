@@ -6,7 +6,7 @@
 <tspan x="10" y="58">&gt; (set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)</tspan>
 <tspan x="10" y="74"></tspan>
 <tspan x="10" y="90"></tspan>
-<tspan x="10" y="106">[MODE_BUILD=npmTest] - 2017-04-07T07:51:19Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
+<tspan x="10" y="106">[MODE_BUILD=npmTest] - 2017-04-07T07:52:59Z - npm-testing /home/travis/build/npmdoc/node-npmdoc-\</tspan>
 <tspan x="10" y="122">node-telegram-bot</tspan>
 <tspan x="10" y="138"></tspan>
 <tspan x="10" y="154"></tspan>
@@ -14,59 +14,59 @@
 <tspan x="10" y="186">c-node-telegram-bot/test.js</tspan>
 <tspan x="10" y="202">merging file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/test-report.jso\</tspan>
 <tspan x="10" y="218">n to test-report</tspan>
-<tspan x="10" y="234">&gt; server listening on http-port 55030</tspan>
+<tspan x="10" y="234">&gt; server listening on http-port 60719</tspan>
 <tspan x="10" y="250">created apidoc file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/apidoc.h\</tspan>
 <tspan x="10" y="266">tml</tspan>
 <tspan x="10" y="282"></tspan>
 <tspan x="10" y="298"></tspan>
 <tspan x="10" y="314">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-node-telegram-bo\</tspan>
-<tspan x="10" y="330">t/tmp/electron.15b47656c7d0.acc434e22a087.html</tspan>
+<tspan x="10" y="330">t/tmp/electron.15b4766f2d50.376a22d5bb7b8.html</tspan>
 <tspan x="10" y="346"></tspan>
 <tspan x="10" y="362">[node test-case 1 of 6 passed] - testCase_buildLib_default</tspan>
 <tspan x="10" y="378">[node test-case 2 of 6 passed] - testCase_buildReadme_default</tspan>
 <tspan x="10" y="394">[node test-case 3 of 6 passed] - testCase_buildTest_default</tspan>
 <tspan x="10" y="410"></tspan>
 <tspan x="10" y="426">browserTest - created electron entry-page /home/travis/build/npmdoc/node-npmdoc-node-telegram-bo\</tspan>
-<tspan x="10" y="442">t/tmp/electron.15b47656cc70.3a51d740bf25c.html</tspan>
+<tspan x="10" y="442">t/tmp/electron.15b4766f3110.54bd51cef90a1.html</tspan>
 <tspan x="10" y="458"></tspan>
 <tspan x="10" y="474">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 <tspan x="10" y="490">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
 <tspan x="10" y="506">merging file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/test-report.jso\</tspan>
 <tspan x="10" y="522">n to test-report</tspan>
-<tspan x="10" y="538">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="554">[4923:0407/075122:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="570">[4923:0407/075122:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="586">[4955:0407/075122:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
-<tspan x="10" y="602">in process gpu-process. </tspan>
-<tspan x="10" y="618">&gt; server listening on http-port 34008</tspan>
-<tspan x="10" y="634">[4923:0407/075122:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
-<tspan x="10" y="650">merging file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/test-report.jso\</tspan>
-<tspan x="10" y="666">n to test-report</tspan>
-<tspan x="10" y="682">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
-<tspan x="10" y="698">[4928:0407/075122:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="714">[4928:0407/075122:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
-<tspan x="10" y="730">[4990:0407/075122:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="538">&gt; server listening on http-port 50820</tspan>
+<tspan x="10" y="554">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="570">merging file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/test-report.jso\</tspan>
+<tspan x="10" y="586">n to test-report</tspan>
+<tspan x="10" y="602">[5892:0407/075302:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="618">[5892:0407/075302:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="634">Xlib:  extension "RANDR" missing on display ":99.0".</tspan>
+<tspan x="10" y="650">[5890:0407/075302:WARNING:audio_manager.cc(314)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="666">[5890:0407/075302:WARNING:audio_manager.cc(275)] Multiple instances of AudioManager detected</tspan>
+<tspan x="10" y="682">[5925:0407/075302:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
+<tspan x="10" y="698">in process gpu-process. </tspan>
+<tspan x="10" y="714">[5892:0407/075302:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="730">[5941:0407/075302:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads \</tspan>
 <tspan x="10" y="746">in process gpu-process. </tspan>
-<tspan x="10" y="762">[4928:0407/075122:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
+<tspan x="10" y="762">[5890:0407/075302:ERROR:browser_gpu_channel_host_factory.cc(131)] Failed to create channel.</tspan>
 <tspan x="10" y="778"></tspan>
 <tspan x="10" y="794">browserTest - opened url /home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/apido\</tspan>
 <tspan x="10" y="810">c.html</tspan>
 <tspan x="10" y="826"></tspan>
 <tspan x="10" y="842"></tspan>
-<tspan x="10" y="858">browserTest - opened url http://127.0.0.1:55030?modeTest=1</tspan>
+<tspan x="10" y="858">browserTest - opened url http://127.0.0.1:60719?modeTest=1</tspan>
 <tspan x="10" y="874"></tspan>
-<tspan x="10" y="890">[4928:0407/075124:INFO:CONSOLE(250)] "----------|-----------|-----------|-----------|-----------\</tspan>
+<tspan x="10" y="890">[5892:0407/075304:INFO:CONSOLE(250)] "----------|-----------|-----------|-----------|-----------\</tspan>
 <tspan x="10" y="906">|</tspan>
 <tspan x="10" y="922">File      |   % Stmts |% Branches |   % Funcs |   % Lines |</tspan>
 <tspan x="10" y="938">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="954">----------|-----------|-----------|-----------|-----------|</tspan>
 <tspan x="10" y="970">All files |       100 |       100 |       100 |       100 |</tspan>
 <tspan x="10" y="986">----------|-----------|-----------|-----------|-----------|</tspan>
-<tspan x="10" y="1002">", source: file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/electron.15b47656c\</tspan>
-<tspan x="10" y="1018">c70.3a51d740bf25c.html (250)</tspan>
-<tspan x="10" y="1034">[4928:0407/075124:INFO:CONSOLE(250)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
-<tspan x="10" y="1050">l", source: file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/electron.15b47656\</tspan>
-<tspan x="10" y="1066">cc70.3a51d740bf25c.html (250)</tspan>
+<tspan x="10" y="1002">", source: file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/electron.15b4766f3\</tspan>
+<tspan x="10" y="1018">110.54bd51cef90a1.html (250)</tspan>
+<tspan x="10" y="1034">[5892:0407/075304:INFO:CONSOLE(250)] "created coverage file:///tmp/build/coverage.html/index.htm\</tspan>
+<tspan x="10" y="1050">l", source: file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/electron.15b4766f\</tspan>
+<tspan x="10" y="1066">3110.54bd51cef90a1.html (250)</tspan>
 <tspan x="10" y="1082">[node test-case 4 of 6 passed] - testCase_buildApp_default</tspan>
 <tspan x="10" y="1098"></tspan>
 <tspan x="10" y="1114">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-b\</tspan>
@@ -77,18 +77,18 @@
 <tspan x="10" y="1194">ot/tmp/build/screenCapture.npmTest.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-node-\</tspan>
 <tspan x="10" y="1210">telegram-bot_2Ftmp_2Fbuild_2Fapidoc.html.html</tspan>
 <tspan x="10" y="1226"></tspan>
-<tspan x="10" y="1242">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/ap\</tspan>
-<tspan x="10" y="1258">idoc.html</tspan>
+<tspan x="10" y="1242">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-b\</tspan>
+<tspan x="10" y="1258">ot/tmp/build/screenCapture.npmTest.browser..png</tspan>
 <tspan x="10" y="1274"></tspan>
-<tspan x="10" y="1290">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
-<tspan x="10" y="1306"></tspan>
-<tspan x="10" y="1322">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-b\</tspan>
-<tspan x="10" y="1338">ot/tmp/build/screenCapture.npmTest.browser..png</tspan>
-<tspan x="10" y="1354"></tspan>
-<tspan x="10" y="1370">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-b\</tspan>
-<tspan x="10" y="1386">ot/tmp/build/screenCapture.npmTest.browser..html</tspan>
+<tspan x="10" y="1290"></tspan>
+<tspan x="10" y="1306">browserTest - exit-code 0 - /home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/ap\</tspan>
+<tspan x="10" y="1322">idoc.html</tspan>
+<tspan x="10" y="1338"></tspan>
+<tspan x="10" y="1354">browserTest - created screenCapture file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-b\</tspan>
+<tspan x="10" y="1370">ot/tmp/build/screenCapture.npmTest.browser..html</tspan>
+<tspan x="10" y="1386">[node test-case 5 of 6 passed] - testCase_buildApidoc_default</tspan>
 <tspan x="10" y="1402"></tspan>
-<tspan x="10" y="1418">browserTest - exit-code 0 - http://127.0.0.1:55030?modeTest=1</tspan>
+<tspan x="10" y="1418">browserTest - exit-code 0 - http://127.0.0.1:60719?modeTest=1</tspan>
 <tspan x="10" y="1434"></tspan>
 <tspan x="10" y="1450"></tspan>
 <tspan x="10" y="1466">browserTest - merged coverage from /home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/c\</tspan>
@@ -116,8 +116,8 @@
 <tspan x="10" y="1818">n to test-report</tspan>
 <tspan x="10" y="1834"></tspan>
 <tspan x="10" y="1850">-------------------------------------------------------</tspan>
-<tspan x="10" y="1866">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-07T07:50:58.297Z</tspan>
-<tspan x="10" y="1882">|   37923 ms            0 failed        6 passed      |</tspan>
+<tspan x="10" y="1866">| test-report - buildNpmdoc - node - linux v6.10.2 - 2017-04-07T07:52:19.770Z</tspan>
+<tspan x="10" y="1882">|   55773 ms            0 failed        6 passed      |</tspan>
 <tspan x="10" y="1898">-------------------------------------------------------</tspan>
 <tspan x="10" y="1914"></tspan>
 <tspan x="10" y="1930">created test-report file:///home/travis/build/npmdoc/node-npmdoc-node-telegram-bot/tmp/build/tes\</tspan>
@@ -127,6 +127,6 @@
 <tspan x="10" y="1994">npmTest - 0 failed tests</tspan>
 <tspan x="10" y="2010"></tspan>
 <tspan x="10" y="2026"></tspan>
-<tspan x="10" y="2042">[MODE_BUILD=npmTest] - 2017-04-07T07:51:39Z - EXIT_CODE - 0</tspan>
+<tspan x="10" y="2042">[MODE_BUILD=npmTest] - 2017-04-07T07:53:19Z - EXIT_CODE - 0</tspan>
 </text>
 </svg>
