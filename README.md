@@ -1,9 +1,14 @@
-# api documentation for  [node-telegram-bot (v0.1.9)](https://github.com/depoio/node-telegram-bot#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-telegram-bot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-telegram-bot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-telegram-bot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-telegram-bot)
+# npmdoc-node-telegram-bot
+
+#### api documentation for  [node-telegram-bot (v0.1.9)](https://github.com/depoio/node-telegram-bot#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-telegram-bot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-telegram-bot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-telegram-bot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-telegram-bot)
+
 #### Telegram Bot API Wrapper for nodejs
 
-[![NPM](https://nodei.co/npm/node-telegram-bot.png?downloads=true)](https://www.npmjs.com/package/node-telegram-bot)
+[![NPM](https://nodei.co/npm/node-telegram-bot.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-telegram-bot)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-node-telegram-bot_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-node-telegram-bot/build/screenCapture.npmPackageListing.svg)
 
@@ -23,12 +28,10 @@
     "contributors": [
         {
             "name": "Alberto Bottarini",
-            "email": "alberto.bottarini@gmail.com",
             "url": "http://www.albertobottarini.com"
         },
         {
             "name": "Sebastian Arena",
-            "email": "sarena@mobile-tonic.com",
             "url": "http://mobile-tonic.com"
         }
     ],
@@ -68,17 +71,14 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "shernshiou",
-            "email": "shernshiou@gmail.com"
+            "name": "shernshiou"
         },
         {
-            "name": "cngan",
-            "email": "chinning.gan@gmail.com"
+            "name": "cngan"
         }
     ],
     "name": "node-telegram-bot",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/depoio/node-telegram-bot.git"
@@ -88,29 +88,6 @@
     },
     "version": "0.1.9"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module node-telegram-bot](#apidoc.module.node-telegram-bot)
-1.  [function <span class="apidocSignatureSpan">node-telegram-bot.</span>super_ ()](#apidoc.element.node-telegram-bot.super_)
-
-
-
-# <a name="apidoc.module.node-telegram-bot"></a>[module node-telegram-bot](#apidoc.module.node-telegram-bot)
-
-#### <a name="apidoc.element.node-telegram-bot.super_"></a>[function <span class="apidocSignatureSpan">node-telegram-bot.</span>super_ ()](#apidoc.element.node-telegram-bot.super_)
-- description and source-code
-```javascript
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
