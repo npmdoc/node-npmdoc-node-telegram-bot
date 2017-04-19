@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/depoio/node-telegram-bot#readme"
-
-    >node-telegram-bot (v0.1.9)</a>
+    <a href="https://github.com/depoio/node-telegram-bot#readme">node-telegram-bot (v0.1.9)</a>
 </h1>
 <h4>Telegram Bot API Wrapper for nodejs</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.node-telegram-bot">module node-telegram-bot</a><ol>
 
@@ -307,10 +300,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Bot(options) {
-  this.base_url = &#x27;https://api.telegram.org/&#x27;;
-  this.id = &#x27;&#x27;;
-  this.first_name = &#x27;&#x27;;
-  this.username = &#x27;&#x27;;
+  this.base_url = 'https://api.telegram.org/';
+  this.id = '';
+  this.first_name = '';
+  this.username = '';
   this.token = options.token;
   this.offset = options.offset ? options.offset : 0;
   this.interval = options.interval ? options.interval : 500;
@@ -335,10 +328,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Bot(options) {
-  this.base_url = &#x27;https://api.telegram.org/&#x27;;
-  this.id = &#x27;&#x27;;
-  this.first_name = &#x27;&#x27;;
-  this.username = &#x27;&#x27;;
+  this.base_url = 'https://api.telegram.org/';
+  this.id = '';
+  this.first_name = '';
+  this.username = '';
   this.token = options.token;
   this.offset = options.offset ? options.offset : 0;
   this.interval = options.interval ? options.interval : 500;
@@ -385,10 +378,10 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Bot(options) {
-  this.base_url = &#x27;https://api.telegram.org/&#x27;;
-  this.id = &#x27;&#x27;;
-  this.first_name = &#x27;&#x27;;
-  this.username = &#x27;&#x27;;
+  this.base_url = 'https://api.telegram.org/';
+  this.id = '';
+  this.first_name = '';
+  this.username = '';
   this.token = options.token;
   this.offset = options.offset ? options.offset : 0;
   this.interval = options.interval ? options.interval : 500;
@@ -434,10 +427,10 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_get = function (options, callback) {
   var self = this;
-  var url = this.base_url + &#x27;bot&#x27; + this.token + &#x27;/&#x27; + options.method;
+  var url = this.base_url + 'bot' + this.token + '/' + options.method;
 
   if (options.params) {
-    url += &#x27;?&#x27; + qs.stringify(options.params);
+    url += '?' + qs.stringify(options.params);
   }
 
   var attempt = 1;
@@ -448,9 +441,9 @@
       json: true
     }, function (err, res, body) {
       if (err) {
-        if (err.code === &#x27;ENOTFOUND&#x27; &#x26;&#x26; attempt &#x3c; self.maxAttempts) {
+        if (err.code === 'ENOTFOUND' &amp;&amp; attempt &lt; self.maxAttempts) {
         ++attempt;
-        self.emit(&#x27;retry&#x27;, attempt);
+        self.emit('retry', attempt);
         retry();
         } else {
           callback(err);
@@ -479,24 +472,24 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_multipart = function (options, callback) {
   var self = this;
-  var url = this.base_url + &#x27;bot&#x27; + this.token + &#x27;/&#x27; + options.method;
+  var url = this.base_url + 'bot' + this.token + '/' + options.method;
 
   var attempt = 1;
 
   function retry() {
     var req = request.post(url, function (err, res, body) {
       if (err) {
-        if (err.code === &#x27;ENOTFOUND&#x27; &#x26;&#x26; attempt &#x3c; self.maxAttempts) {
+        if (err.code === 'ENOTFOUND' &amp;&amp; attempt &lt; self.maxAttempts) {
           ++attempt;
-          self.emit(&#x27;retry&#x27;, attempt);
+          self.emit('retry', attempt);
           retry();
         } else {
           callback(err);
         }
       } else {
-        var contentType = res.headers[&#x27;content-type&#x27;];
+        var contentType = res.headers['content-type'];
 
-        if (contentType.indexOf(&#x27;application/json&#x27;) &#x3e;= 0) {
+        if (contentType.indexOf('application/json') &gt;= 0) {
           try {
             body = JSON.parse(body);
           } catch (e) {
@@ -516,11 +509,11 @@
 
     var arr = Object.keys(options.files);
 
-    if (arr.indexOf(&#x27;stream&#x27;) &#x3e; -1) {
-      type = options.files[&#x27;type&#x27;];
-      filename = options.files[&#x27;filename&#x27;];
-      stream = options.files[&#x27;stream&#x27;];
-      contentType = options.files[&#x27;contentType&#x27;];
+    if (arr.indexOf('stream') &gt; -1) {
+      type = options.files['type'];
+      filename = options.files['filename'];
+      stream = options.files['stream'];
+      contentType = options.files['contentType'];
     } else {
       arr.forEach(function (key) {
         var file = options.files[key];
@@ -561,11 +554,11 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_poll = function () {
   var self = this;
-  var url = self.base_url + &#x27;bot&#x27; + self.token + &#x27;/getUpdates?timeout=&#x27; + self.timeout + &#x27;&#x26;offset=&#x27; + self.offset;
+  var url = self.base_url + 'bot' + self.token + '/getUpdates?timeout=' + self.timeout + '&amp;offset=' + self.offset;
 
   self.pollingRequest = null;
   if (self.polling) {
-    debug(&#x22;Poll&#x22;);
+    debug("Poll");
 
     self.pollingRequest = request.get({
       url: url,
@@ -573,31 +566,31 @@
       json: true
     }, function (err, res, body) {
 
-      if (err &#x26;&#x26; err.code !== &#x27;ETIMEDOUT&#x27;) {
-        self.emit(&#x27;error&#x27;, err);
-      } else if (res &#x26;&#x26; res.statusCode === 200) {
+      if (err &amp;&amp; err.code !== 'ETIMEDOUT') {
+        self.emit('error', err);
+      } else if (res &amp;&amp; res.statusCode === 200) {
         if (body.ok) {
           body.result.forEach(function (msg) {
-            if (msg.update_id &#x3e;= self.offset) {
+            if (msg.update_id &gt;= self.offset) {
               self.offset = msg.update_id + 1;
 
               if (self.parseCommand) {
-                if (msg.message.text &#x26;&#x26; msg.message.text.charAt(0) === &#x27;/&#x27;) {
+                if (msg.message.text &amp;&amp; msg.message.text.charAt(0) === '/') {
 <span class="apidocCodeCommentSpan">                  /**
                    * Split the message on space and @
                    * Zero part = complete message
                    * First part = command with leading /
-                   * Third part = target or empty &#x22;&#x22;
-                   * Fourth part = arguments or empty &#x22;&#x22;
+                   * Third part = target or empty ""
+                   * Fourth part = arguments or empty ""
                    */
 </span>                  var messageParts = msg.message.text.match(/([^@ ]*)([^ ]*)[ ]?(.*)/);
 
                   // Filter everything not alphaNum out of the command
-                  var command = messageParts[1].replace(/[^a-zA-Z0-9 ]/g, &#x22;&#x22;);
+                  var command = messageParts[1].replace(/[^a-zA-Z0-9 ]/g, "");
                   // Target incl @ sign or null
-                  var target = (messageParts[2] !== &#x22;&#x22; ? messageParts[2]: null);
+                  var target = (messageParts[2] !== "" ? messageParts[2]: null);
                   // Optional arguments or null
-                  var args = (messageParts[3] !== &#x22;&#x22; ? messageParts[3].split(&#x27; &#x27;): null);
+                  var args = (messageParts[3] !== "" ? messageParts[3].split(' '): null);
 
                   self.emit(command, msg.message, args, target);
                 }
@@ -607,7 +600,7 @@
                 self.analytics.track(msg.message);
               }
 
-              self.emit(&#x27;message&#x27;, msg.message);
+              self.emit('message', msg.message);
             }
           });
         }
@@ -616,14 +609,14 @@
             self._poll();
         }
 
-      } else if(res &#x26;&#x26; res.hasOwnProperty(&#x27;statusCode&#x27;) &#x26;&#x26; res.statusCode === 401) {
-        self.emit(&#x27;error&#x27;, new Error(&#x27;Invalid token.&#x27;));
-      } else if(res &#x26;&#x26; res.hasOwnProperty(&#x27;statusCode&#x27;) &#x26;&#x26; res.statusCode === 409) {
-        self.emit(&#x27;error&#x27;, new Error(&#x27;Duplicate token.&#x27;));
-      } else if(res &#x26;&#x26; res.hasOwnProperty(&#x27;statusCode&#x27;) &#x26;&#x26; res.statusCode === 502) {
-        self.emit(&#x27;error&#x27;, new Error(&#x27;Gateway error.&#x27;));
-      } else if(self.pollingRequest &#x26;&#x26; !self.pollingRequest._aborted) { //Skip error throwing, this is an abort due to stopping
-        self.emit(&#x27;error&#x27;, new Error(util.format(&#x27;Unknown error&#x27;)));
+      } else if(res &amp;&amp; res.hasOwnProperty('statusCode') &amp;&amp; res.statusCode === 401) {
+        self.emit('error', new Error('Invalid token.'));
+      } else if(res &amp;&amp; res.hasOwnProperty('statusCode') &amp;&amp; res.statusCode === 409) {
+        self.emit('error', new Error('Duplicate token.'));
+      } else if(res &amp;&amp; res.hasOwnProperty('statusCode') &amp;&amp; res.statusCode === 502) {
+        self.emit('error', new Error('Gateway error.'));
+      } else if(self.pollingRequest &amp;&amp; !self.pollingRequest._aborted) { //Skip error throwing, this is an abort due to stopping
+        self.emit('error', new Error(util.format('Unknown error')));
       }
     });
   }
@@ -644,25 +637,25 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">_setWebhook = function (webhook) {
   var self = this;
-  var url = this.base_url + &#x27;bot&#x27; + this.token + &#x27;/setWebhook&#x27; + &#x22;?&#x22; + qs.stringify({url: webhook});
+  var url = this.base_url + 'bot' + this.token + '/setWebhook' + "?" + qs.stringify({url: webhook});
 
   request.get({
     url: url,
     json: true
   }, function (err, res, body) {
-    if (!err &#x26;&#x26; res &#x26;&#x26; res.statusCode === 200) {
+    if (!err &amp;&amp; res &amp;&amp; res.statusCode === 200) {
       if (body.ok) {
-      	debug(&#x22;Set webhook to &#x22; + self.webhook);
+      	debug("Set webhook to " + self.webhook);
 			} else {
-				debug(&#x22;Body not ok&#x22;);
+				debug("Body not ok");
 				debug(body);
 			}
-    } else if(res &#x26;&#x26; res.hasOwnProperty(&#x27;statusCode&#x27;) &#x26;&#x26; res.statusCode === 401){
+    } else if(res &amp;&amp; res.hasOwnProperty('statusCode') &amp;&amp; res.statusCode === 401){
       debug(err);
-      debug(&#x22;Failed to set webhook with code&#x22; + res.statusCode);
+      debug("Failed to set webhook with code" + res.statusCode);
     } else {
       debug(err);
-      debug(&#x22;Failed to set webhook with unknown error&#x22;);
+      debug("Failed to set webhook with unknown error");
     }
   });
 }</pre></li>
@@ -689,10 +682,10 @@
 ```javascript
 
 var bot = new Bot({
-  token: &#x27;Telegram token&#x27;
+  token: 'Telegram token'
 })
-.<span class="apidocCodeKeywordSpan">enableAnalytics</span>(&#x27;Botan.io token&#x27;)
-.on(&#x27;message&#x27;, function (message) {
+.<span class="apidocCodeKeywordSpan">enableAnalytics</span>('Botan.io token')
+.on('message', function (message) {
   console.log(message);
 })
 .start();
@@ -715,7 +708,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;forwardMessage&#x27;,
+    method: 'forwardMessage',
     params: {
       chat_id: options.chat_id,
       from_chat_id: options.from_chat_id,
@@ -752,7 +745,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;getFile&#x27;,
+    method: 'getFile',
     params: {
       file_id: options.file_id
     }
@@ -765,17 +758,17 @@ var bot = new Bot({
       var filename = path.basename(res.result.file_path);
       if (options.dir) {
         var filepath  = path.join(options.dir, filename);
-        var url = self.base_url + &#x27;file/bot&#x27; + self.token + &#x27;/&#x27; + res.result.file_path;
+        var url = self.base_url + 'file/bot' + self.token + '/' + res.result.file_path;
         var destination = fs.createWriteStream(filepath);
         request(url)
         .pipe(destination)
-        .on(&#x27;finish&#x27;, function () {
+        .on('finish', function () {
           deferred.resolve({
             destination: filepath,
             url: url
           });
         })
-        .on(&#x27;error&#x27;, function(error){
+        .on('error', function(error){
           deferred.reject(error);
         });
       } else {
@@ -806,7 +799,7 @@ var bot = new Bot({
   var self = this
     , deferred = Q.defer();
 
-  this._get({ method: &#x27;getMe&#x27; }, function (err, res) {
+  this._get({ method: 'getMe' }, function (err, res) {
     if (err) {
       return deferred.reject(err);
     }
@@ -841,7 +834,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;getUserProfilePhotos&#x27;,
+    method: 'getUserProfilePhotos',
     params: {
       user_id: options.user_id,
       offset: options.offset,
@@ -879,7 +872,7 @@ var bot = new Bot({
 
   if (options.file_id) {
     this._get({
-      method: &#x27;sendAudio&#x27;,
+      method: 'sendAudio',
       params: {
         chat_id: options.chat_id,
         audio: options.file_id,
@@ -901,13 +894,13 @@ var bot = new Bot({
     var files;
     if (options.files.stream) {
       files = {
-        type: &#x27;audio&#x27;,
+        type: 'audio',
         filename: options.files.filename,
         contentType: options.files.contentType,
         stream: options.files.stream
       }
-    } else if (mime.lookup(options.files.audio) !== &#x27;audio/ogg&#x27;) {
-      return Q.reject(new Error(&#x27;Invalid file type&#x27;))
+    } else if (mime.lookup(options.files.audio) !== 'audio/ogg') {
+      return Q.reject(new Error('Invalid file type'))
       .nodeify(callback);
     } else {
       files = {
@@ -916,7 +909,7 @@ var bot = new Bot({
     }
 
     this._multipart({
-      method: &#x27;sendAudio&#x27;,
+      method: 'sendAudio',
       params: {
         chat_id: options.chat_id,
         reply_to_message_id: options.reply_to_message_id,
@@ -955,7 +948,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;sendChatAction&#x27;,
+    method: 'sendChatAction',
     params: {
       chat_id: options.chat_id,
       action: options.action
@@ -992,7 +985,7 @@ var bot = new Bot({
 
   if (options.file_id) {
     this._get({
-      method: &#x27;sendDocument&#x27;,
+      method: 'sendDocument',
       params: {
         chat_id: options.chat_id,
         document: options.file_id,
@@ -1014,7 +1007,7 @@ var bot = new Bot({
     var files;
     if (options.files.stream) {
       files = {
-        type: &#x27;document&#x27;,
+        type: 'document',
         filename: options.files.filename,
         contentType: options.files.contentType,
         stream: options.files.stream
@@ -1026,7 +1019,7 @@ var bot = new Bot({
     }
 
     this._multipart({
-      method: &#x27;sendDocument&#x27;,
+      method: 'sendDocument',
       params: {
         chat_id: options.chat_id,
         reply_to_message_id: options.reply_to_message_id,
@@ -1065,7 +1058,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;sendLocation&#x27;,
+    method: 'sendLocation',
     params: {
       chat_id: options.chat_id,
       latitude: options.latitude,
@@ -1104,7 +1097,7 @@ var bot = new Bot({
     , deferred = Q.defer();
 
   this._get({
-    method: &#x27;sendMessage&#x27;,
+    method: 'sendMessage',
     params: {
       chat_id: options.chat_id,
       text: options.text,
@@ -1145,7 +1138,7 @@ var bot = new Bot({
 
   if (options.file_id) {
     this._get({
-      method: &#x27;sendPhoto&#x27;,
+      method: 'sendPhoto',
       params: {
         chat_id: options.chat_id,
         caption: options.caption,
@@ -1168,7 +1161,7 @@ var bot = new Bot({
     var files;
     if (options.files.stream) {
       files = {
-        type: &#x27;photo&#x27;,
+        type: 'photo',
         filename: options.files.filename,
         contentType: options.files.contentType,
         stream: options.files.stream
@@ -1180,7 +1173,7 @@ var bot = new Bot({
     }
 
     this._multipart({
-      method: &#x27;sendPhoto&#x27;,
+      method: 'sendPhoto',
       params: {
         chat_id: options.chat_id,
         caption: options.caption,
@@ -1213,9 +1206,9 @@ Now only require filepath,
 
 bot.<span class="apidocCodeKeywordSpan">sendPhoto</span>({
 chat_id: USER_ID,
-caption: &#x27;Telegram Logo&#x27;,
+caption: 'Telegram Logo',
 files: {
-  photo: &#x27;./examples/logo.png&#x27;
+  photo: './examples/logo.png'
 }
 }, function (err, msg) {
 console.log(err);
@@ -1237,7 +1230,7 @@ console.log(err);
 
   if (options.file_id) {
     this._get({
-      method: &#x27;sendSticker&#x27;,
+      method: 'sendSticker',
       params: {
         chat_id: options.chat_id,
         sticker: options.file_id,
@@ -1256,13 +1249,13 @@ console.log(err);
       }
     });
   } else {
-    if (mime.lookup(options.files.sticker) !== &#x27;image/webp&#x27;) {
-      return Q.reject(new Error(&#x27;Invalid file type&#x27;))
+    if (mime.lookup(options.files.sticker) !== 'image/webp') {
+      return Q.reject(new Error('Invalid file type'))
       .nodeify(callback);
     }
 
     this._multipart({
-      method: &#x27;sendSticker&#x27;,
+      method: 'sendSticker',
       params: {
         chat_id: options.chat_id,
         reply_to_message_id: options.reply_to_message_id,
@@ -1304,7 +1297,7 @@ console.log(err);
 
   if (options.file_id) {
     this._get({
-      method: &#x27;sendSticker&#x27;,
+      method: 'sendSticker',
       params: {
         chat_id: options.chat_id,
         video: options.file_id,
@@ -1326,13 +1319,13 @@ console.log(err);
     var files;
     if (options.files.stream) {
       files = {
-        type: &#x27;video&#x27;,
+        type: 'video',
         filename: options.files.filename,
         contentType: options.files.contentType,
         stream: options.files.stream
       }
-    } else if (mime.lookup(options.files.video.filename) !== &#x27;video/mp4&#x27;) {
-      return Q.reject(new Error(&#x27;Invalid file type&#x27;))
+    } else if (mime.lookup(options.files.video.filename) !== 'video/mp4') {
+      return Q.reject(new Error('Invalid file type'))
       .nodeify(callback);
     } else {
       files = {
@@ -1341,7 +1334,7 @@ console.log(err);
     }
 
     this._multipart({
-      method: &#x27;sendVideo&#x27;,
+      method: 'sendVideo',
       params: {
         chat_id: options.chat_id,
         reply_to_message_id: options.reply_to_message_id,
@@ -1388,9 +1381,9 @@ console.log(err);
     <li>example usage<pre class="apidocCodePre">...
 
 var bot = new Bot({
-  token: &#x27;TOKEN HERE&#x27;
+  token: 'TOKEN HERE'
 })
-.on(&#x27;message&#x27;, function (message) {
+.on('message', function (message) {
   console.log(message);
 })
 .<span class="apidocCodeKeywordSpan">start</span>();
@@ -1433,3 +1426,4 @@ var bot = new Bot({
     ]
 </div>
 </div>
+</body></html>
